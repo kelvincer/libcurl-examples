@@ -1,7 +1,6 @@
 #include <curl/curl.h>
 
-static size_t header_callback(char *buffer, size_t size,
-                              size_t nitems)
+static size_t header_callback(char *buffer, size_t size, size_t nitems)
 {
     printf("%s", buffer);
     return nitems * size;
